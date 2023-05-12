@@ -1,0 +1,302 @@
+@import "./variaveis";
+
+@font-face {
+    font-family: "escript";
+    src: url("../fonts/Garlicha.otf") format("opentype"), url("../fonts/Garlicha.ttf") format("truetype");
+    font-weight: nomal;
+    font-style: normal;
+}
+
+/*Reset da página*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bgAppCardapio.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /*border: 1px solid $sangue;*/
+}
+
+.titulo {
+    background-image: url(../img/bgPlaca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $buraco;
+    border-radius: 20px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 3px 3px 15px $buraco;
+    margin: 30px auto;
+
+
+    h1 {
+        text-shadow: 3px 4px 6px $dark;
+        font-family: "escript";
+        font-weight: normal;
+        font-size: 5vmax;
+        color: $nuvem;
+    }
+}
+
+
+.menu {
+    /*border: 1px solid $sol;*/
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.cardapios {
+    border: 1px solid $dark;
+    background: $nuvem;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 68px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px $dark;
+}
+
+@import "./noDisplay";
+
+
+
+.semana {
+    border: 1px solid $dark;
+    background: $nuvem;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 115px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px $dark;
+}
+
+.wrapper {
+    width: 400px;
+    height: auto;
+    margin: 10px auto;
+    /*border: 2px solid $blood;*/
+}
+
+@import "./labelsOptions";
+
+/*Elimina a borda padrão do iframe e arredonda com border-radius*/
+.helpi {
+    display: none;
+    visibility: hidden;
+    border-radius: 20px;
+    border: none;
+    margin-left: 3%;
+    width: 340px;
+    height: 530px;
+    transition: All 2s easy;
+    box-shadow: -2px -2px 3px $dark, 2px 2px 3px $dark;
+}
+
+
+
+/*Aqui começam as configurações de chamada das labels*/
+
+input.car:checked[type="checkbox"]~.umA {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+/*Semana 1*/
+
+input.slider1:checked[type="checkbox"]~.diaSemana1 {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+/*Chamando os cardápios do dia*/
+
+input.faq-diaSemana1:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+input.faq-diaSemana2:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+input.faq-diaSemana3:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+input.faq-diaSemana4:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+input.faq-diaSemana5:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+input.faq-diaSemana6:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+input.faq-diaSemana7:checked[type="checkbox"]+.diaSemana1 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1.4s;
+}
+
+/*---------------x---------------------------x-----------------x*/
+
+/*Semana 2*/
+
+input.slider2:checked[type="checkbox"]~.diaSemana2 {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+/*Chamando os cardápios do dia*/
+
+input.faq-diaSemana8:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.faq-diaSemana9:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.faq-diaSemana10:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.faq-diaSemana11:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.faq-diaSemana12:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.faq-diaSemana13:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.faq-diaSemana14:checked[type="checkbox"]+.diaSemana2 .helpi {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+
+/*---------------x---------------------------x-----------------x*/
+
+input.slider3:checked[type="checkbox"]~.diaSemana3 {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.slider4:checked[type="checkbox"]~.diaSemana4 {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+input.slider5:checked[type="checkbox"]~.diaSemana5 {
+    display: block;
+    visibility: visible;
+    animation: viewCap 1s;
+}
+
+/*A animação*/
+
+@keyframes viewCap {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+    from {
+        transform: translateY(-400%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+
+}
+
+
+
+.rodape {
+    /*border: 1px solid $blood;*/
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 100px auto;
+
+
+    h2 {
+        margin: 60px auto;
+        color: $nuvem;
+        text-shadow: 3px 3px 3px $dark;
+        font-size: 2vmax;
+    }
+
+    p {
+        color: $nuvem;
+        text-shadow: 3px 3px 3px $dark;
+        font-size: 2vmax;
+        margin-left: 50%;
+    }
+}
