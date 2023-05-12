@@ -1,0 +1,116 @@
+@import "../../../../css/variaveis";
+
+body {
+    background-color: $gelo;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.titulo {
+    text-align: center;
+    text-shadow: 2px 2px 3px $rato;
+    font-size: 1.2em;
+}
+
+.container {
+    display: block;
+    background-color: $nuvem;
+    min-width: 255px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 16px;
+    box-shadow: 2px 2px 3px $dark;
+}
+
+.content {
+    display: block;
+    min-height: 1100px;
+
+}
+
+.subDados {
+    /*border: 1px solid $dark;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.subDados1 {
+    background: $neve;
+    text-align: center;
+    text-shadow: 2px 2px 1px $nuvem;
+    box-shadow: 2px 2px 2px $rato;
+    padding: 5px;
+}
+
+.subDados2 {
+    background: $neve;
+    text-align: center;
+    text-shadow: 2px 2px 1px $nuvem;
+    box-shadow: 2px 2px 2px $rato;
+    padding: 5px;
+}
+
+
+
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px 3px $dark;
+    margin-top: 3px;
+}
+
+h1,
+h2 {
+    margin-top: 8px;
+}
+
+
+p {
+    display: block;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+
+.start {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: $dark;
+    text-shadow: 2px 2px 3px $rato;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.subTitulo {
+    text-align: center;
+
+
+    h2 {
+        font-size: 1.7em;
+        text-shadow: 2px 2px 2px $rato;
+    }
+}
+
+.ingredientes {
+    /*border: 1px solid $dark;*/
+    border-radius: 10px;
+    background: $fog;
+    padding: 2px;
+    box-shadow: 2px 2px 3px $rato;
+}
+
+.ingredientes ol li {
+    line-height: 30px;
+}
+
+.ingredientes h3,
+p {
+    text-shadow: 2px 2px 3px $rato;
+    margin-left: 20px;
+}
